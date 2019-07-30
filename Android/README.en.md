@@ -41,6 +41,19 @@ Before compiling and starting the instance program, you need to first get an ava
 
 ```
 
+### Create Sogou zhiyin Account and Obtain Appid and AppKey
+Before compiling and starting the instance program, you need to first obtain the available AppId, AppKey:
+1. Create a developer account at [zhiyin.sogou](https://zhiyin.sogou.com/login)
+2. After successful login, click on the **console** menu in the left navigation bar
+3. Click **Create an application** on the console page
+4. After the application is created successfully, click on the application to view **basic information**, copy **AppID** **Appkey** and modify the configuration io.agora.liveshow.demo.voice.SogouVoiceChannel 
+``` java
+    // sogou zhiyin plat appid
+    private static final String APP_ID = "";
+    // sogou zhiyin plat appkey
+    private static final String APP_KEY = "";
+```
+
 ### Integrated Agora Video SDK
 
 Download ** Video Call + Live SDK ** at [Agora.io SDK] (https://www.agora.io/cn/download/) and decompress it. Copy the contents of ** LIBS ** directory to the project according to the following corresponding relationship.

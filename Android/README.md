@@ -29,7 +29,6 @@
 2. 前往后台页面，点击左部导航栏的 **项目 > 项目列表** 菜单
 3. 复制后台的 **App ID** 并备注，稍后启动应用时会用到它
 4. 在项目页面生成临时 **Access Token** (24小时内有效)并备注，注意生成的Token只能适用于对应的频道名。
-
 5. 将 AppID 填写进 "app/src/main/res/values/strings.xml"
   ``` xml
   <string name="private_app_id"><#YOUR APP ID#></string>
@@ -38,6 +37,20 @@
   <!-- 如果你的项目没有打开安全证书，下面的值可以直接留空 -->
   <string name="agora_access_token"><#YOUR TOKEN#></string>
  ```
+
+### 创建搜狗知音帐号并获取Appid、AppKey
+在编译和启动实例程序前，您需要首先获取可用AppId、AppKey:
+1. 在[zhiyin.sogou](https://zhiyin.sogou.com/login)创建一个开发者账号
+2. 帐号登录成功后，点击左部导航栏的 **控制台** 菜单
+3. 在控制台页面点击 **创建应用**
+4. 应用创建成功后，点击应用查看 **基本信息** ，复制 **AppID** **Appkey** 并修改配置io.agora.liveshow.demo.voice.SogouVoiceChannel
+``` java
+    // 搜狗知音平台appid
+    private static final String APP_ID = "";
+    // 搜狗知音平台appkey
+    private static final String APP_KEY = "";
+```
+
 ### 集成 Agora 视频 SDK
 
 在 [Agora.io SDK](https://www.agora.io/cn/download/) 下载 **视频通话 + 直播 SDK**并解压，按以下对应关系将 **libs** 目录的内容复制到项目内。

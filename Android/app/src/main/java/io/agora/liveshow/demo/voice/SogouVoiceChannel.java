@@ -34,8 +34,8 @@ public class SogouVoiceChannel implements IVoiceAction {
     private static final String TAG = "SogouAsrHelper";
     // 以下信息从知音平台申请获得
     private static final String BASE_URL = "api.zhiyin.sogou.com";
-    private static final String APP_ID = "1NPvp3GfhQdK1H91uIpn4gjdyvX";
-    private static final String APP_KEY = "01IMEivsrQFDyPffhMVMEfeUODoYcd67E8YqhnqHWTohO6hSvqMkNKUkq4Q66Aab63D33EL9qlRQPTGzfqpfVA==";
+    private static final String APP_ID = "";
+    private static final String APP_KEY = "";
     private static final String UUID = "testUUID";
 
     private SogoSpeech mSogouSpeech;
