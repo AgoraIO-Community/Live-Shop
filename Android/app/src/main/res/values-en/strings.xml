@@ -1,0 +1,59 @@
+<resources>
+
+    <string name="app_name">AgoraLiveDemo</string>
+    <string name="private_app_id">70b08633621e40b3b8a1280e0b101a02</string>
+    <!-- Temporary Token is available at https://dashboard.agora.io -->
+    <!-- Before officially launching the production environment, you must deploy your own Token server -->
+    <!-- If your project does not open a security certificate, the following values can be left blank directly -->
+    <string name="agora_access_token">YOUR TOKEN</string>
+
+    <string name="page_live_prepare">Live configuration</string>
+    <string name="page_live_recommend">Live recommend</string>
+
+    <string name="voice_input_to_start">hold down and speak</string>
+    <string name="voice_input_to_end">loosen end</string>
+    <string name="voice_input_error_cancel">cancel sending</string>
+    <string name="voice_input_to_cancel">cancel sending</string>
+
+    <string name="living_anchor_offline">The anchor is offline</string>
+    <string name="living_no_surfaceview">No screen yet</string>
+
+    <string name="online">online</string>
+    <string name="offline">offline</string>
+    <string name="me">I</string>
+    <string name="anchor">anchor</string>
+    <string name="user">user</string>
+    <string name="yes">is </string>
+    <string name="no">no</string>
+    <string name="cancle">Cancel</string>
+    <string name="send">send </string>
+
+    <string name="tab_anchor_nickname">Anchor nickname: </string>
+    <string name="tab_anchor_headimg">Anchor avatar: </string>
+    <string name="tab_live_cover">Living cover: </string>
+    <string name="tab_anchor_tags">Anchor tags: </string>
+
+    <string name="hint_anchor_nickname">Please input nickname</string>
+    <string name="hint_add_tag">add tag</string>
+    <string name="hint_input_chat_msg">Please input a chat message</string>
+
+    <string name="btn_am_anchor">I am the anchor</string>
+    <string name="btn_am_viewer">I am an audience</string>
+    <string name="btn_start_live">Start live</string>
+
+    <string name="msg_language_select">语言选择 - Language selection</string>
+    <string name="msg_sure_question">Please confirm the topic</string>
+    <string name="msg_question_analysis_result">Topic:%s \n Result Statistics \n Number of Answers:%d \n Choose\'Yes\'Number:%d \n Choose\'No\' Number:%d</string>
+
+    <string name="toast_nickname_is_empty">Please input the host nickname</string>
+    <string name="toast_headimg_is_empty">Please select the host header</string>
+    <string name="toast_cover_is_empty">Please select live cover</string>
+    <string name="toast_question_isnot_end">The last answer is not over yet</string>
+    <string name="toast_question_is_empty">The title is empty</string>
+    <string name="toast_no_asr_input">Unrecognized voice input</string>
+    <string name="toast_create_channel_error">Failure to create message channel</string>
+    <string name="toast_msg_service_ready">Message service OK</string>
+    <string name="toast_msg_service_error_and_retry">Message service exception, retrying for you</string>
+    <string name="toast_msg_is_empty">Message cannot be empty</string>
+
+</resources>

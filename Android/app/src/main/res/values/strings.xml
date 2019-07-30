@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">AgoraLiveDemo</string>
+    <string name="private_app_id">70b08633621e40b3b8a1280e0b101a02</string>
+    <!-- 临时Token 可以在 https://dashboard.agora.io 获取 -->
+    <!-- 在正式上线生产环境前，你必须部署你自己的Token服务器 -->
+    <!-- 如果你的项目没有打开安全证书，下面的值可以直接留空 -->
+    <string name="agora_access_token">YOUR TOKEN</string>
+
+    <string name="page_live_prepare">直播配置</string>
+    <string name="page_live_recommend">直播推荐</string>
+
+    <string name="voice_input_to_start">按住 说话</string>
+    <string name="voice_input_to_end">松开 结束</string>
+    <string name="voice_input_error_cancel">松开手指，取消发送</string>
+    <string name="voice_input_to_cancel">手指上滑，取消发送</string>
+
+    <string name="living_anchor_offline">主播不在线</string>
+    <string name="living_no_surfaceview">暂无画面</string>
+
+    <string name="online">上线</string>
+    <string name="offline">离线</string>
+    <string name="me">我</string>
+    <string name="anchor">主播</string>
+    <string name="user">用户</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="cancle">取消</string>
+    <string name="send">发送</string>
+
+    <string name="tab_anchor_nickname">主播昵称：</string>
+    <string name="tab_anchor_headimg">主播头像：</string>
+    <string name="tab_live_cover">直播封面：</string>
+    <string name="tab_anchor_tags">主播标签：</string>
+
+    <string name="hint_anchor_nickname">请输入主播昵称</string>
+    <string name="hint_add_tag">添加标签</string>
+    <string name="hint_input_chat_msg">请输入聊天消息</string>
+
+    <string name="btn_am_anchor">我是主播</string>
+    <string name="btn_am_viewer">我是观众</string>
+    <string name="btn_start_live">开始直播</string>
+
+    <string name="msg_language_select">语言选择 - Language selection</string>
+    <string name="msg_sure_question">请确认题目内容</string>
+    <string name="msg_question_analysis_result">题目：%s\n结果统计\n答题人数：%d\n选择‘是’人数：%d\n选择‘否’人数：%d</string>
+
+    <string name="toast_nickname_is_empty">请输入主播昵称</string>
+    <string name="toast_headimg_is_empty">请选择主播头像</string>
+    <string name="toast_cover_is_empty">请选择直播封面</string>
+    <string name="toast_question_isnot_end">上次答题还未结束</string>
+    <string name="toast_question_is_empty">题目内容为空</string>
+    <string name="toast_no_asr_input">未识别到语音输入</string>
+    <string name="toast_create_channel_error">创建消息通道失败</string>
+    <string name="toast_msg_service_ready">消息服务OK</string>
+    <string name="toast_msg_service_error_and_retry">消息服务异常，正在为您重试</string>
+    <string name="toast_msg_is_empty">消息不能为空</string>
+
+</resources>
