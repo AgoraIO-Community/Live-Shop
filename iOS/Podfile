@@ -1,0 +1,14 @@
+platform :ios, '10.0'
+
+target 'AgoraLiveShop' do
+  use_frameworks!
+  
+  # ignore all warnings from all pods
+  inhibit_all_warnings!
+  
+  pod 'SogouSpeechSDK'
+  pod 'WSTagsField'
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'SVProgressHUD'
+
+end

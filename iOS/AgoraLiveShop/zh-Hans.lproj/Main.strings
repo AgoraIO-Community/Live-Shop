@@ -1,0 +1,36 @@
+
+/* Class = "UINavigationItem"; title = "Live Shop"; ObjectID = "31S-hm-EEj"; */
+"31S-hm-EEj.title" = "Live Shop";
+
+/* Class = "UIButton"; normalTitle = "    Chat..."; ObjectID = "52s-4r-yhK"; */
+"52s-4r-yhK.normalTitle" = "    聊天...";
+
+/* Class = "UILabel"; text = "Test User"; ObjectID = "6mu-Cd-2F6"; */
+"6mu-Cd-2F6.text" = "测试用户";
+
+/* Class = "UITextField"; placeholder = "Title Your Stream"; ObjectID = "CMy-pi-3XG"; */
+"CMy-pi-3XG.placeholder" = "输入直播间名称";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "HOG-u2-HY7"; */
+"HOG-u2-HY7.title" = "返回";
+
+/* Class = "UIButton"; normalTitle = "Upload Product Image"; ObjectID = "MZX-4A-MxF"; */
+"MZX-4A-MxF.normalTitle" = "上传商品图片";
+
+/* Class = "UILabel"; text = "Wireless Bluetooth Headphone"; ObjectID = "QZp-yQ-E7i"; */
+"QZp-yQ-E7i.text" = "无线蓝牙耳机";
+
+/* Class = "UILabel"; text = "New"; ObjectID = "cSo-VL-Cmw"; */
+"cSo-VL-Cmw.text" = "新品";
+
+/* Class = "UIViewController"; title = "Stream Setup"; ObjectID = "czn-hn-7W6"; */
+"czn-hn-7W6.title" = "直播设置";
+
+/* Class = "UILabel"; text = "Featured"; ObjectID = "nK9-rs-xYV"; */
+"nK9-rs-xYV.text" = "推荐商品";
+
+/* Class = "UIBarButtonItem"; title = "Go Live"; ObjectID = "nf7-ju-60M"; */
+"nf7-ju-60M.title" = "开启直播";
+
+/* Class = "UIButton"; normalTitle = "Start Stream"; ObjectID = "wIF-LC-O7C"; */
+"wIF-LC-O7C.normalTitle" = "开始";

@@ -1,0 +1,6 @@
+framework module SogouSpeechSDK {
+  umbrella header "SogouSpeechSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,84 @@
+PODS:
+  - BoringSSL-GRPC (0.0.3):
+    - BoringSSL-GRPC/Implementation (= 0.0.3)
+    - BoringSSL-GRPC/Interface (= 0.0.3)
+  - BoringSSL-GRPC/Implementation (0.0.3):
+    - BoringSSL-GRPC/Interface (= 0.0.3)
+  - BoringSSL-GRPC/Interface (0.0.3)
+  - gRPC (1.20.0):
+    - gRPC-RxLibrary (= 1.20.0)
+    - gRPC/Main (= 1.20.0)
+  - gRPC-Core (1.20.0):
+    - gRPC-Core/Implementation (= 1.20.0)
+    - gRPC-Core/Interface (= 1.20.0)
+  - gRPC-Core/Implementation (1.20.0):
+    - BoringSSL-GRPC (= 0.0.3)
+    - gRPC-Core/Interface (= 1.20.0)
+    - nanopb (~> 0.3)
+  - gRPC-Core/Interface (1.20.0)
+  - gRPC-ProtoRPC (1.20.0):
+    - gRPC-ProtoRPC/Main (= 1.20.0)
+  - gRPC-ProtoRPC/Main (1.20.0):
+    - gRPC (= 1.20.0)
+    - gRPC-RxLibrary (= 1.20.0)
+    - Protobuf (~> 3.0)
+  - gRPC-RxLibrary (1.20.0)
+  - gRPC/Main (1.20.0):
+    - gRPC-Core (= 1.20.0)
+    - gRPC-RxLibrary (= 1.20.0)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - Protobuf (3.7.0)
+  - SnapKit (5.0.0)
+  - SogouSpeechSDK (1.1.1):
+    - SogouSpeechSDK/Client (= 1.1.1)
+    - SogouSpeechSDK/Messages (= 1.1.1)
+    - SogouSpeechSDK/Services (= 1.1.1)
+  - SogouSpeechSDK/Client (1.1.1)
+  - SogouSpeechSDK/Messages (1.1.1):
+    - Protobuf
+  - SogouSpeechSDK/Services (1.1.1):
+    - gRPC-ProtoRPC
+    - SogouSpeechSDK/Messages
+  - SVProgressHUD (2.2.5)
+  - WSTagsField (5.0.0)
+
+DEPENDENCIES:
+  - SnapKit (~> 5.0.0)
+  - SogouSpeechSDK
+  - SVProgressHUD
+  - WSTagsField
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BoringSSL-GRPC
+    - gRPC
+    - gRPC-Core
+    - gRPC-ProtoRPC
+    - gRPC-RxLibrary
+    - nanopb
+    - Protobuf
+    - SnapKit
+    - SogouSpeechSDK
+    - SVProgressHUD
+    - WSTagsField
+
+SPEC CHECKSUMS:
+  BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
+  gRPC: d175f32a1f0ff0eafc768e38e8c0b8a9fcbacc65
+  gRPC-Core: b247504496d2bdf47e6a87690c0d48f8424b324a
+  gRPC-ProtoRPC: d49c7074c6a5e5a9f18f9b5a1c6d94787334bcbe
+  gRPC-RxLibrary: 3b5272bfdd136c3bc1383ffdfc210404b5d8400a
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SogouSpeechSDK: 469a61e446f996b58db84aca9821a95de34a0bf2
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  WSTagsField: 5963db79f251c2a87ecfcf5dbfa36d05efc3d548
+
+PODFILE CHECKSUM: 28b61954411276000e9590de0f27ca7ae44396eb
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A288A0A22D9E5EA005D8E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A0922D9E5EA005D8E4E /* AppDelegate.swift */; };
+		5A288A0F22D9E5EA005D8E4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A288A0D22D9E5EA005D8E4E /* Main.storyboard */; };
+		5A288A1122D9E5EB005D8E4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A288A1022D9E5EB005D8E4E /* Assets.xcassets */; };
+		5A288A1422D9E5EB005D8E4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A288A1222D9E5EB005D8E4E /* LaunchScreen.storyboard */; };
+		5A288A1E22D9EA62005D8E4E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A288A1D22D9EA62005D8E4E /* libc++.tbd */; };
+		5A288A2022D9EA6F005D8E4E /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A288A1F22D9EA6F005D8E4E /* libresolv.tbd */; };
+		5A288A2222D9EA78005D8E4E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A288A2122D9EA78005D8E4E /* SystemConfiguration.framework */; };
+		5A288A2422D9EA80005D8E4E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A288A2322D9EA80005D8E4E /* CoreTelephony.framework */; };
+		5A288A2622D9EAE2005D8E4E /* AgoraRtcEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A288A2522D9EAE2005D8E4E /* AgoraRtcEngineKit.framework */; };
+		5A288A2822D9EAF1005D8E4E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A288A2722D9EAF1005D8E4E /* Accelerate.framework */; };
+		5A288A2A22D9EAFB005D8E4E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A288A2922D9EAFA005D8E4E /* CoreMedia.framework */; };
+		5A288A2C22D9EB06005D8E4E /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A288A2B22D9EB05005D8E4E /* VideoToolbox.framework */; };
+		5A288A2E22D9EB0D005D8E4E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A288A2D22D9EB0D005D8E4E /* AudioToolbox.framework */; };
+		5A288A3022D9EB17005D8E4E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A288A2F22D9EB17005D8E4E /* AVFoundation.framework */; };
+		5A288A3222D9EB1E005D8E4E /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A288A3122D9EB1E005D8E4E /* CoreML.framework */; };
+		5A288A3922D9F2A7005D8E4E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A3822D9F2A7005D8E4E /* HomeViewController.swift */; };
+		5A288A3E22D9F328005D8E4E /* StreamSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A3D22D9F328005D8E4E /* StreamSetupViewController.swift */; };
+		5A288A4722DA30E8005D8E4E /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A4622DA30E8005D8E4E /* SpeechService.swift */; };
+		5A288A4D22DA3279005D8E4E /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A4C22DA3279005D8E4E /* Channel.swift */; };
+		5A288A5122DA3398005D8E4E /* KeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A5022DA3398005D8E4E /* KeyCenter.swift */; };
+		5A288A6B22DB0CA5005D8E4E /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A6A22DB0CA5005D8E4E /* LiveViewController.swift */; };
+		5A288A6D22DB1B4B005D8E4E /* LiveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A6C22DB1B4B005D8E4E /* LiveService.swift */; };
+		5A288A6F22DB1B62005D8E4E /* AgoraRtmKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A288A6E22DB1B61005D8E4E /* AgoraRtmKit.framework */; };
+		5A288A7322DB2EF7005D8E4E /* GenerateToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A7222DB2EF7005D8E4E /* GenerateToken.m */; };
+		5A288A7522DB3A36005D8E4E /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A7422DB3A36005D8E4E /* ChannelCell.swift */; };
+		5A288A7722DB5778005D8E4E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A7622DB5778005D8E4E /* User.swift */; };
+		5A288A7922DB6B18005D8E4E /* VoiceRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A7822DB6B18005D8E4E /* VoiceRecordView.swift */; };
+		5A288A7E22DCA1FD005D8E4E /* UIView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A7D22DCA1FD005D8E4E /* UIView+Design.swift */; };
+		5A288A8022DCB062005D8E4E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A7F22DCB062005D8E4E /* ChatViewController.swift */; };
+		5A288A8222DCB07C005D8E4E /* AnswersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A8122DCB07C005D8E4E /* AnswersViewController.swift */; };
+		5A288A8422DCB845005D8E4E /* ChatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A8322DCB845005D8E4E /* ChatInputView.swift */; };
+		5A288A8622DCC494005D8E4E /* VoiceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A288A8522DCC494005D8E4E /* VoiceButton.swift */; };
+		5A987D4A22DF547900600078 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A987D4822DF547800600078 /* Localizable.strings */; };
+		71E1E4E7A5F5D8FC1EF4010C /* Pods_AgoraLiveShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20FFD36DB1082C677D338EA /* Pods_AgoraLiveShop.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A288A0622D9E5EA005D8E4E /* AgoraLiveShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgoraLiveShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A288A0922D9E5EA005D8E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A288A0E22D9E5EA005D8E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A288A1022D9E5EB005D8E4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A288A1322D9E5EB005D8E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A288A1522D9E5EB005D8E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A288A1D22D9EA62005D8E4E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		5A288A1F22D9EA6F005D8E4E /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		5A288A2122D9EA78005D8E4E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5A288A2322D9EA80005D8E4E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5A288A2522D9EAE2005D8E4E /* AgoraRtcEngineKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtcEngineKit.framework; sourceTree = "<group>"; };
+		5A288A2722D9EAF1005D8E4E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		5A288A2922D9EAFA005D8E4E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		5A288A2B22D9EB05005D8E4E /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		5A288A2D22D9EB0D005D8E4E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5A288A2F22D9EB17005D8E4E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5A288A3122D9EB1E005D8E4E /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		5A288A3822D9F2A7005D8E4E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5A288A3D22D9F328005D8E4E /* StreamSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamSetupViewController.swift; sourceTree = "<group>"; };
+		5A288A4622DA30E8005D8E4E /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		5A288A4C22DA3279005D8E4E /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		5A288A5022DA3398005D8E4E /* KeyCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCenter.swift; sourceTree = "<group>"; };
+		5A288A6A22DB0CA5005D8E4E /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		5A288A6C22DB1B4B005D8E4E /* LiveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveService.swift; sourceTree = "<group>"; };
+		5A288A6E22DB1B61005D8E4E /* AgoraRtmKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtmKit.framework; sourceTree = "<group>"; };
+		5A288A7022DB2EF6005D8E4E /* AgoraLiveShop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AgoraLiveShop-Bridging-Header.h"; path = "Classes/Services/AgoraLiveShop-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A288A7122DB2EF7005D8E4E /* GenerateToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateToken.h; sourceTree = "<group>"; };
+		5A288A7222DB2EF7005D8E4E /* GenerateToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateToken.m; sourceTree = "<group>"; };
+		5A288A7422DB3A36005D8E4E /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		5A288A7622DB5778005D8E4E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5A288A7822DB6B18005D8E4E /* VoiceRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecordView.swift; sourceTree = "<group>"; };
+		5A288A7D22DCA1FD005D8E4E /* UIView+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Design.swift"; sourceTree = "<group>"; };
+		5A288A7F22DCB062005D8E4E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		5A288A8122DCB07C005D8E4E /* AnswersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersViewController.swift; sourceTree = "<group>"; };
+		5A288A8322DCB845005D8E4E /* ChatInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputView.swift; sourceTree = "<group>"; };
+		5A288A8522DCC494005D8E4E /* VoiceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceButton.swift; sourceTree = "<group>"; };
+		5A987D4722DF4E3900600078 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		5A987D4922DF547800600078 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		65D530581579AB531E61BB1F /* Pods-AgoraLiveShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraLiveShop.debug.xcconfig"; path = "Target Support Files/Pods-AgoraLiveShop/Pods-AgoraLiveShop.debug.xcconfig"; sourceTree = "<group>"; };
+		BCC712B6EAE7E2F5B6C86B64 /* Pods-AgoraLiveShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraLiveShop.release.xcconfig"; path = "Target Support Files/Pods-AgoraLiveShop/Pods-AgoraLiveShop.release.xcconfig"; sourceTree = "<group>"; };
+		F20FFD36DB1082C677D338EA /* Pods_AgoraLiveShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgoraLiveShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A288A0322D9E5EA005D8E4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A288A3222D9EB1E005D8E4E /* CoreML.framework in Frameworks */,
+				5A288A3022D9EB17005D8E4E /* AVFoundation.framework in Frameworks */,
+				5A288A2E22D9EB0D005D8E4E /* AudioToolbox.framework in Frameworks */,
+				5A288A6F22DB1B62005D8E4E /* AgoraRtmKit.framework in Frameworks */,
+				5A288A2C22D9EB06005D8E4E /* VideoToolbox.framework in Frameworks */,
+				5A288A2A22D9EAFB005D8E4E /* CoreMedia.framework in Frameworks */,
+				5A288A2822D9EAF1005D8E4E /* Accelerate.framework in Frameworks */,
+				5A288A2422D9EA80005D8E4E /* CoreTelephony.framework in Frameworks */,
+				5A288A2222D9EA78005D8E4E /* SystemConfiguration.framework in Frameworks */,
+				5A288A2022D9EA6F005D8E4E /* libresolv.tbd in Frameworks */,
+				5A288A1E22D9EA62005D8E4E /* libc++.tbd in Frameworks */,
+				5A288A2622D9EAE2005D8E4E /* AgoraRtcEngineKit.framework in Frameworks */,
+				71E1E4E7A5F5D8FC1EF4010C /* Pods_AgoraLiveShop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A2889FD22D9E5EA005D8E4E = {
+			isa = PBXGroup;
+			children = (
+				5A288A0822D9E5EA005D8E4E /* AgoraLiveShop */,
+				5A288A0722D9E5EA005D8E4E /* Products */,
+				8DA14EB3B2771F8DA8147589 /* Pods */,
+				D0CACE3B9D585F2EB67775C1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A288A0722D9E5EA005D8E4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A288A0622D9E5EA005D8E4E /* AgoraLiveShop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A288A0822D9E5EA005D8E4E /* AgoraLiveShop */ = {
+			isa = PBXGroup;
+			children = (
+				5A288A3322D9F20B005D8E4E /* Classes */,
+				5A288A0922D9E5EA005D8E4E /* AppDelegate.swift */,
+				5A288A5022DA3398005D8E4E /* KeyCenter.swift */,
+				5A288A0D22D9E5EA005D8E4E /* Main.storyboard */,
+				5A288A1022D9E5EB005D8E4E /* Assets.xcassets */,
+				5A288A1222D9E5EB005D8E4E /* LaunchScreen.storyboard */,
+				5A987D4822DF547800600078 /* Localizable.strings */,
+				5A288A7022DB2EF6005D8E4E /* AgoraLiveShop-Bridging-Header.h */,
+				5A288A1522D9E5EB005D8E4E /* Info.plist */,
+			);
+			path = AgoraLiveShop;
+			sourceTree = "<group>";
+		};
+		5A288A3322D9F20B005D8E4E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5A288A7C22DC9F6E005D8E4E /* Extensions */,
+				5A288A3722D9F22F005D8E4E /* Services */,
+				5A288A3622D9F223005D8E4E /* Models */,
+				5A288A3522D9F21E005D8E4E /* Views */,
+				5A288A3422D9F216005D8E4E /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5A288A3422D9F216005D8E4E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A288A3822D9F2A7005D8E4E /* HomeViewController.swift */,
+				5A288A6A22DB0CA5005D8E4E /* LiveViewController.swift */,
+				5A288A3D22D9F328005D8E4E /* StreamSetupViewController.swift */,
+				5A288A7F22DCB062005D8E4E /* ChatViewController.swift */,
+				5A288A8122DCB07C005D8E4E /* AnswersViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5A288A3522D9F21E005D8E4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A288A7422DB3A36005D8E4E /* ChannelCell.swift */,
+				5A288A7822DB6B18005D8E4E /* VoiceRecordView.swift */,
+				5A288A8322DCB845005D8E4E /* ChatInputView.swift */,
+				5A288A8522DCC494005D8E4E /* VoiceButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A288A3622D9F223005D8E4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A288A4C22DA3279005D8E4E /* Channel.swift */,
+				5A288A7622DB5778005D8E4E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A288A3722D9F22F005D8E4E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5A288A7122DB2EF7005D8E4E /* GenerateToken.h */,
+				5A288A7222DB2EF7005D8E4E /* GenerateToken.m */,
+				5A288A4622DA30E8005D8E4E /* SpeechService.swift */,
+				5A288A6C22DB1B4B005D8E4E /* LiveService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5A288A7C22DC9F6E005D8E4E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A288A7D22DCA1FD005D8E4E /* UIView+Design.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8DA14EB3B2771F8DA8147589 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65D530581579AB531E61BB1F /* Pods-AgoraLiveShop.debug.xcconfig */,
+				BCC712B6EAE7E2F5B6C86B64 /* Pods-AgoraLiveShop.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0CACE3B9D585F2EB67775C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A288A6E22DB1B61005D8E4E /* AgoraRtmKit.framework */,
+				5A288A3122D9EB1E005D8E4E /* CoreML.framework */,
+				5A288A2F22D9EB17005D8E4E /* AVFoundation.framework */,
+				5A288A2D22D9EB0D005D8E4E /* AudioToolbox.framework */,
+				5A288A2B22D9EB05005D8E4E /* VideoToolbox.framework */,
+				5A288A2922D9EAFA005D8E4E /* CoreMedia.framework */,
+				5A288A2722D9EAF1005D8E4E /* Accelerate.framework */,
+				5A288A2522D9EAE2005D8E4E /* AgoraRtcEngineKit.framework */,
+				5A288A2322D9EA80005D8E4E /* CoreTelephony.framework */,
+				5A288A2122D9EA78005D8E4E /* SystemConfiguration.framework */,
+				5A288A1F22D9EA6F005D8E4E /* libresolv.tbd */,
+				5A288A1D22D9EA62005D8E4E /* libc++.tbd */,
+				F20FFD36DB1082C677D338EA /* Pods_AgoraLiveShop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A288A0522D9E5EA005D8E4E /* AgoraLiveShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A288A1822D9E5EB005D8E4E /* Build configuration list for PBXNativeTarget "AgoraLiveShop" */;
+			buildPhases = (
+				23531C5402BA6C9A3C7D11FC /* [CP] Check Pods Manifest.lock */,
+				5A288A0222D9E5EA005D8E4E /* Sources */,
+				5A288A0322D9E5EA005D8E4E /* Frameworks */,
+				5A288A0422D9E5EA005D8E4E /* Resources */,
+				62C954489DC03EFD5084B44B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgoraLiveShop;
+			productName = AgoraLiveShop;
+			productReference = 5A288A0622D9E5EA005D8E4E /* AgoraLiveShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A2889FE22D9E5EA005D8E4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = WeaponJ;
+				TargetAttributes = {
+					5A288A0522D9E5EA005D8E4E = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5A288A0122D9E5EA005D8E4E /* Build configuration list for PBXProject "AgoraLiveShop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 5A2889FD22D9E5EA005D8E4E;
+			productRefGroup = 5A288A0722D9E5EA005D8E4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A288A0522D9E5EA005D8E4E /* AgoraLiveShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A288A0422D9E5EA005D8E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A288A1422D9E5EB005D8E4E /* LaunchScreen.storyboard in Resources */,
+				5A987D4A22DF547900600078 /* Localizable.strings in Resources */,
+				5A288A1122D9E5EB005D8E4E /* Assets.xcassets in Resources */,
+				5A288A0F22D9E5EA005D8E4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23531C5402BA6C9A3C7D11FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgoraLiveShop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62C954489DC03EFD5084B44B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgoraLiveShop/Pods-AgoraLiveShop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/WSTagsField/WSTagsField.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WSTagsField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AgoraLiveShop/Pods-AgoraLiveShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A288A0222D9E5EA005D8E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A288A6B22DB0CA5005D8E4E /* LiveViewController.swift in Sources */,
+				5A288A4D22DA3279005D8E4E /* Channel.swift in Sources */,
+				5A288A6D22DB1B4B005D8E4E /* LiveService.swift in Sources */,
+				5A288A3E22D9F328005D8E4E /* StreamSetupViewController.swift in Sources */,
+				5A288A7522DB3A36005D8E4E /* ChannelCell.swift in Sources */,
+				5A288A7722DB5778005D8E4E /* User.swift in Sources */,
+				5A288A0A22D9E5EA005D8E4E /* AppDelegate.swift in Sources */,
+				5A288A8222DCB07C005D8E4E /* AnswersViewController.swift in Sources */,
+				5A288A7322DB2EF7005D8E4E /* GenerateToken.m in Sources */,
+				5A288A3922D9F2A7005D8E4E /* HomeViewController.swift in Sources */,
+				5A288A5122DA3398005D8E4E /* KeyCenter.swift in Sources */,
+				5A288A7922DB6B18005D8E4E /* VoiceRecordView.swift in Sources */,
+				5A288A7E22DCA1FD005D8E4E /* UIView+Design.swift in Sources */,
+				5A288A8022DCB062005D8E4E /* ChatViewController.swift in Sources */,
+				5A288A4722DA30E8005D8E4E /* SpeechService.swift in Sources */,
+				5A288A8622DCC494005D8E4E /* VoiceButton.swift in Sources */,
+				5A288A8422DCB845005D8E4E /* ChatInputView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A288A0D22D9E5EA005D8E4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A288A0E22D9E5EA005D8E4E /* Base */,
+				5A987D4722DF4E3900600078 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A288A1222D9E5EB005D8E4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A288A1322D9E5EB005D8E4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5A987D4822DF547800600078 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A987D4922DF547800600078 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A288A1622D9E5EB005D8E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A288A1722D9E5EB005D8E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A288A1922D9E5EB005D8E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D530581579AB531E61BB1F /* Pods-AgoraLiveShop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K25SLYCJ9G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AgoraLiveShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weaponj.AgoraLiveShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AgoraLiveShop/Classes/Services/AgoraLiveShop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A288A1A22D9E5EB005D8E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCC712B6EAE7E2F5B6C86B64 /* Pods-AgoraLiveShop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K25SLYCJ9G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AgoraLiveShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weaponj.AgoraLiveShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AgoraLiveShop/Classes/Services/AgoraLiveShop-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A288A0122D9E5EA005D8E4E /* Build configuration list for PBXProject "AgoraLiveShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A288A1622D9E5EB005D8E4E /* Debug */,
+				5A288A1722D9E5EB005D8E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A288A1822D9E5EB005D8E4E /* Build configuration list for PBXNativeTarget "AgoraLiveShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A288A1922D9E5EB005D8E4E /* Debug */,
+				5A288A1A22D9E5EB005D8E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A2889FE22D9E5EA005D8E4E /* Project object */;
+}
