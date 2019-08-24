@@ -32,12 +32,16 @@ class LiveService: NSObject {
     
     private static let service = LiveService()
     
+    // init AgoraRtcEngineKit
+    // then enable video capturing and set the channel profile for broadcasting
+    // Note: audio recording and playing is enabled by default
     private lazy var rtcKit: AgoraRtcEngineKit = {
         let kit = AgoraRtcEngineKit.sharedEngine(withAppId: KeyCenter.AgoraAppId, delegate: self)
         kit.enableVideo()
         kit.setChannelProfile(.liveBroadcasting)
         return kit
     }()
+    // init AgoraRtmKit
     private lazy var rtmKit: AgoraRtmKit! = AgoraRtmKit(appId: KeyCenter.AgoraAppId, delegate: self)
     
     private var channel: AgoraRtmChannel?
@@ -51,6 +55,7 @@ extension LiveService {
         return service
     }
     
+    // login to agora rtm service
     public func login() {
         rtmKit.login(byToken: nil, user: currentUser, completion: { errorCode in
             if (errorCode != .ok) {
@@ -61,6 +66,7 @@ extension LiveService {
         })
     }
     
+    // join video broadcasting and messaging channel use the same channelId
     public func joinChannel(_ channelId: String) {
         let code = rtcKit.joinChannel(byToken: nil, channelId: channelId, info: nil, uid: 0, joinSuccess: nil)
         if code == 0 {
@@ -81,6 +87,7 @@ extension LiveService {
         })
     }
     
+    // set the local video view for broadcasters
     public func setupLocalVideo(withUid uid: UInt, toView view: UIView) {
         let canvas = AgoraRtcVideoCanvas()
         canvas.view = view
@@ -89,6 +96,7 @@ extension LiveService {
         rtcKit.setupLocalVideo(canvas)
     }
     
+    // set the remote video view for audiences
     public func setupRemoteVideo(withUid uid: UInt, toView view: UIView) {
         let canvas = AgoraRtcVideoCanvas()
         canvas.view = view
@@ -98,6 +106,7 @@ extension LiveService {
         rtcKit.setRemoteVideoStream(uid, type: .high)
     }
     
+    // send messages with different types
     public func send(text: String, type: MessageType) {
         let message = LiveService.buildMessage(text, type: type)
         channel?.send(message, completion: { errorCode in
@@ -115,6 +124,7 @@ extension LiveService {
         })
     }
     
+    // leave both the video broadcasting and messaging channel
     public func leaveChannel() {
         rtcKit.leaveChannel(nil)
         channel?.leave(completion: nil)
@@ -124,6 +134,7 @@ extension LiveService {
 }
 
 extension LiveService {
+    // add some special characters for different message types so we can parse it
     static private func buildMessage(_ text: String, type: MessageType) -> AgoraRtmMessage {
         var message = ""
         
@@ -139,6 +150,7 @@ extension LiveService {
         return AgoraRtmMessage(text: message)
     }
     
+    // parse the received message
     static private func extractMessage(message: AgoraRtmMessage) -> (String, MessageType) {
         if (message.text.hasPrefix("|chat|")) {
             return (String(message.text.dropFirst(6)), .Chat)

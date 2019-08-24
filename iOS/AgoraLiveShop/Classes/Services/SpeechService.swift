@@ -71,6 +71,7 @@ extension SpeechService: SogouSpeechDelegate {
     
     func onEvent(_ eventName: String!, param: NSObject!) {
         print("On sogou speech event \(eventName ?? "") withParam: \(param ?? "" as NSObject)")
+        // parse the final result
         if (eventName == MSG_ASR_ONLINE_ALL_CONTENT) {
             guard let result = param as? SPBStreamingRecognitionResult, result.isFinal else { return }
             guard let alternative = result.alternativesArray.firstObject as? SPBSpeechRecognitionAlternative else { return }
