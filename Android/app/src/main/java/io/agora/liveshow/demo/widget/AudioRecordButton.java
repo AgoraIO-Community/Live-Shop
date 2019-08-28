@@ -49,7 +49,6 @@ public class AudioRecordButton extends AppCompatButton {
                 break;
             case MotionEvent.ACTION_MOVE:
                 if (isRecording) {
-                    // 根据x，y来判断用户是否想要取消
                     if (wantToCancel(x, y)) {
                         changeState(STATE_WANT_TO_CANCEL);
                     } else {
@@ -58,20 +57,18 @@ public class AudioRecordButton extends AppCompatButton {
                 }
                 break;
             case MotionEvent.ACTION_UP:
-                // 首先判断是否有触发onlongclick事件，没有的话直接返回reset
                 if (!mReady) {
                     reset();
                     return super.onTouchEvent(event);
                 }
                 if (mCurrentState == STATE_RECORDING) {
-                    //正常录制结束
                     if (null != mListener) {
                         mListener.finished();
                     }
                 } else if (null != mListener) {
                     mListener.canceled();
                 }
-                reset();// 恢复标志位
+                reset();
                 break;
         }
         return super.onTouchEvent(event);
@@ -87,7 +84,7 @@ public class AudioRecordButton extends AppCompatButton {
     }
 
     private boolean wantToCancel(int x, int y) {
-        if (x < 0 || x > getWidth()) {// 判断是否在左边，右边，上边，下边
+        if (x < 0 || x > getWidth()) {
             return true;
         }
         if (y < -DISTANCE_Y_CANCEL || y > getHeight() + DISTANCE_Y_CANCEL) {

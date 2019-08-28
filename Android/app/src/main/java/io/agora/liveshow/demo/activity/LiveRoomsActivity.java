@@ -9,7 +9,7 @@ import android.widget.TextView;
 import demo.liveshow.agora.io.R;
 
 /**
- * 直播房间页面
+ * 直播房间页面 | Live room page
  */
 public class LiveRoomsActivity extends AgoraBaseActivity {
     

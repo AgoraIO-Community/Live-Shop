@@ -27,8 +27,8 @@ public class ImageSelectHelper {
     private final String FILE_SAVEPATH;
     private AgoraBaseActivity mContext;
     private boolean mIsCrop;
-    private boolean mIsCompressSource = true; // 是否压缩源文件
-    private float mCompressMinWidth = 1024.0f; // 源文件压缩的最小宽度
+    private boolean mIsCompressSource = true;
+    private float mCompressMinWidth = 1024.0f;
     private int mOutWidth;
     private int mOutHeight;
     private Uri mSoureFileUri;
@@ -37,7 +37,7 @@ public class ImageSelectHelper {
     private OnImageSelectedListener mSelectedListener;
 
     /**
-     * 需要将当前activity的onActivityResult和onRequestPermissionsResult代理到本类中
+     * Should proxy method onActivityResult and onRequestPermissionsResult in activity
      *
      * @param context
      */
@@ -59,9 +59,9 @@ public class ImageSelectHelper {
 
     private void preStartImagePick() {
         if (android.os.Build.VERSION.SDK_INT >= 23) {
-            //摄像头权限检测
+            //permission check
             if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED || ContextCompat.checkSelfPermission(mContext, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                //进行权限请求
+                //request permission
                 ActivityCompat.requestPermissions(mContext, new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, REQ_PERMISSION);
                 return;
             } else {
@@ -76,7 +76,7 @@ public class ImageSelectHelper {
      * 选择图片裁剪
      */
     private void startImagePick() {
-        // 判断是否挂载了SD卡
+        // check sdcard is prepared
         String storageState = Environment.getExternalStorageState();
         if (storageState.equals(Environment.MEDIA_MOUNTED)) {
             File savedir = new File(FILE_SAVEPATH);
@@ -84,8 +84,7 @@ public class ImageSelectHelper {
                 savedir.mkdirs();
             }
         } else {
-            // 没有挂载SD卡，无法保存文件
-            mContext.showToast("无法保存照片，请检查SD卡是否挂载");
+            mContext.showToast("Enviroment check error");
             return;
         }
         Intent intent;
@@ -97,7 +96,7 @@ public class ImageSelectHelper {
             intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
             intent.setType("image/*");
         }
-        mContext.startActivityForResult(Intent.createChooser(intent, "选择图片"), ImageUtils.REQUEST_CODE_GETIMAGE_BYCROP);
+        mContext.startActivityForResult(Intent.createChooser(intent, "Select Picture"), ImageUtils.REQUEST_CODE_GETIMAGE_BYCROP);
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent imageReturnIntent) {
@@ -116,7 +115,7 @@ public class ImageSelectHelper {
             case ImageUtils.REQUEST_CODE_GETIMAGE_BYCROP:
                 mSoureFileUri = imageReturnIntent.getData();
                 mSourceFilePath = getOutImageUrl(mSoureFileUri);
-                startActionCrop();// 选图后裁剪
+                startActionCrop();
                 break;
             case ImageUtils.REQUEST_CODE_GETIMAGE_BYSDCARD:
                 if (null != mSelectedListener) {
@@ -126,9 +125,6 @@ public class ImageSelectHelper {
         }
     }
 
-    /**
-     * 裁剪
-     */
     private void startActionCrop() {
         if (!mIsCrop) {
             if (null != mSelectedListener) {
@@ -141,41 +137,36 @@ public class ImageSelectHelper {
         intent.setDataAndType(mSoureFileUri, "image/*");
         intent.putExtra("output", genCropTempFile(mSoureFileUri));
         intent.putExtra("crop", "true");
-        intent.putExtra("aspectX", mOutWidth);// 裁剪框比例
+        intent.putExtra("aspectX", mOutWidth);
         intent.putExtra("aspectY", mOutHeight);
-        intent.putExtra("outputX", mOutWidth);// 输出图片大小
+        intent.putExtra("outputX", mOutWidth);
         intent.putExtra("outputY", mOutHeight);
-        intent.putExtra("scale", true);// 去黑边
-        intent.putExtra("scaleUpIfNeeded", true);// 去黑边
+        intent.putExtra("scale", true);
+        intent.putExtra("scaleUpIfNeeded", true);
         mContext.startActivityForResult(intent, ImageUtils.REQUEST_CODE_GETIMAGE_BYSDCARD);
     }
 
-    // 裁剪头像的绝对路径
     private Uri genCropTempFile(Uri uri) {
         String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
         String thePath = ImageUtils.getAbsolutePathFromNoStandardUri(uri);
 
-        // 如果是标准Uri
         if (TextUtils.isEmpty(thePath)) {
             thePath = ImageUtils.getAbsoluteImagePath(mContext, uri);
         }
         String ext = getFileFormat(thePath);
         ext = TextUtils.isEmpty(ext) ? "jpg" : ext;
-        // 照片命名
         String cropFileName = "phonelive_crop_" + timeStamp + "." + ext;
         mCropFilePath = FILE_SAVEPATH + cropFileName;
-        // 裁剪头像的绝对路径
         return Uri.fromFile(new File(mCropFilePath));
     }
 
     private String geSourceFileName() {
         String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
-        return "tmpImage" + timeStamp + ".jpg";// 照片命名
+        return "tmpImage" + timeStamp + ".jpg";
     }
 
     private String getOutImageUrl(Uri uri) {
         String thePath = ImageUtils.getAbsolutePathFromNoStandardUri(uri);
-        // 如果是标准Uri
         if (TextUtils.isEmpty(thePath)) {
             thePath = ImageUtils.getAbsoluteImagePath(mContext, uri);
         }
@@ -200,7 +191,6 @@ public class ImageSelectHelper {
             bitmap = BitmapFactory.decodeStream(fis, null, options);
             int width = bitmap.getWidth();
             int height = bitmap.getHeight();
-            // 压缩大小，去宽高最大的值计算
             float sampleSize = width > height ? width / mCompressMinWidth : height / mCompressMinWidth;
             if (sampleSize > 1) {
                 options.inJustDecodeBounds = false;

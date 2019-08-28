@@ -20,6 +20,9 @@ import io.agora.liveshow.demo.voice.VoiceActionFactory;
 
 /**
  * 角色选择页面。该页面可以切换主播和观众角色，也支持语言修改。
+ * <p>
+ * Role selection page. This page can switch the roles of host and audience, and also supports language modification.
+ * </p>
  */
 public class RoleSelectActivity extends AgoraBaseActivity {
 

@@ -24,6 +24,9 @@ import io.agora.rtc.RtcEngine;
 
 /**
  * 主播直播页面。包含发送语音题目和观众答题统计功能。
+ * <p>
+ *  Host live page. Includes the function of sending voice questions and audiences'answer statistics.
+ * </p>
  */
 public class AnchorLiveActivity extends BaseLiveActivity {
     private final int WAIT_TIME = 15 * 1000;

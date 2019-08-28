@@ -17,6 +17,9 @@ import io.agora.rtc.RtcEngine;
 
 /**
  * 观众直播页面。包含根据主播状态切换显示画面和答题功能。
+ * <p>
+ *  Audience live page. It includes the function of switching display screen and answering questions according to the status of the host.
+ * </p>
  */
 public class ViewerLiveActivity extends BaseLiveActivity {
     private TextView tvNoSurfaceNotice;

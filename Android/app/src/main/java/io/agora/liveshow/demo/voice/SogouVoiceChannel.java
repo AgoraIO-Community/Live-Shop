@@ -29,10 +29,14 @@ import java.util.ArrayList;
 /**
  * 搜狗知音在线ASR识别帮组类
  * 搜狗知音SDK集成文档 https://docs.zhiyin.sogou.com/docs/asr/sdk
+ * <p>
+ * On-line ASR Recognition Help Class for Sogouzhiyin
+ * Sogouzhiyin friend SDK integrated document : https://docs.zhiyin.sogou.com/docs/asr/sdk
  */
 public class SogouVoiceChannel implements IVoiceAction {
     private static final String TAG = "SogouAsrHelper";
     // 以下信息从知音平台申请获得
+    // The following information is obtained from the application of Sogouzhiyin Platform
     private static final String BASE_URL = "api.zhiyin.sogou.com";
     private static final String APP_ID = "";
     private static final String APP_KEY = "";
@@ -178,7 +182,7 @@ public class SogouVoiceChannel implements IVoiceAction {
             }
             String tmpList[] = new String[toApplyList.size()];
             if (!toApplyList.isEmpty()) {
-                Toast.makeText(activity, "Demo需要如下权限", Toast.LENGTH_SHORT).show();
+                Toast.makeText(activity, "Demo request permissions", Toast.LENGTH_SHORT).show();
                 ActivityCompat.requestPermissions(activity, toApplyList.toArray(tmpList), 0);
             } else {
                 startAsrTransform(activity, mListener);

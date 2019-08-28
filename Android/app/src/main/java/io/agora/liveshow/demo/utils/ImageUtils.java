@@ -18,20 +18,9 @@ public class ImageUtils {
     public final static String SDCARD_MNT = "/mnt/sdcard";
     public final static String SDCARD = "/sdcard";
     
-    /**
-     * 请求相册
-     */
     public static final int REQUEST_CODE_GETIMAGE_BYSDCARD = 0;
-    /**
-     * 请求裁剪
-     */
     public static final int REQUEST_CODE_GETIMAGE_BYCROP = 2;
     
-    /**
-     * 写图片文件 在Android系统中，文件保存在 /data/data/PACKAGE_NAME/files 目录下
-     *
-     * @throws IOException
-     */
     public static void saveImage(Context context, String fileName, Bitmap bitmap) throws IOException {
         saveImage(context, fileName, bitmap, 100);
     }
@@ -49,9 +38,6 @@ public class ImageUtils {
         fos.close();
     }
     
-    /**
-     * 判断当前Url是否标准的content://样式，如果不是，则返回绝对路径
-     */
     public static String getAbsolutePathFromNoStandardUri(Uri mUri) {
         String filePath = null;
         
@@ -71,9 +57,6 @@ public class ImageUtils {
         return filePath;
     }
     
-    /**
-     * 通过uri获取文件的绝对路径
-     */
     public static String getAbsoluteImagePath(Activity context, Uri uri) {
         String imagePath = "";
         String[] proj = {MediaStore.Images.Media.DATA};

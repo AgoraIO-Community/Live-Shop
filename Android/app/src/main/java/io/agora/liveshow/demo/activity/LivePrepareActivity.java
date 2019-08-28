@@ -18,6 +18,9 @@ import demo.liveshow.agora.io.R;
 
 /**
  * 直播准备页面。包含主播昵称、头像、直播封面、标签等元素设置
+ * <p>
+ *  Live Prepare Page. Including the host nickname, avatar, live cover, label and other elements of settings
+ * </p>
  */
 public class LivePrepareActivity extends AgoraBaseActivity {
     private EditText etNickname;

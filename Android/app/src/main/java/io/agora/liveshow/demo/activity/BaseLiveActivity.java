@@ -28,6 +28,9 @@ import io.agora.rtm.RtmMessage;
 
 /**
  * 直播基础类页面，封装了直播基础功能和消息通信功能
+ * <p>
+ * Live Basic Class Page, encapsulating Live Basic Function and Message Communication Function
+ * </p>
  */
 public abstract class BaseLiveActivity extends AgoraBaseActivity implements OnRtcEnventCallback, OnRtmMessageListener {
     protected final String MSG_PREFIX_QUESTION = "AgoraQuestion:";
