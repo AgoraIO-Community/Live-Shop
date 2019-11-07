@@ -79,7 +79,7 @@ extension LiveService {
         
         channel = rtmKit.createChannel(withId: channelId, delegate: self)
         channel?.join(completion: { errorCode in
-            if (errorCode != .ok) {
+            if (errorCode != .channelErrorOk) {
                 print("Join rtm channel failed \(errorCode)")
             } else {
                 print("Join rtm channel success")
@@ -110,7 +110,7 @@ extension LiveService {
     public func send(text: String, type: MessageType) {
         let message = LiveService.buildMessage(text, type: type)
         channel?.send(message, completion: { errorCode in
-            if (errorCode == .ok) {
+            if (errorCode == .errorOk) {
                 print("Send message success")
                 if(type == .Quiz) {
                     self.isAnswering = true
